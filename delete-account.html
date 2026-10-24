@@ -33,44 +33,45 @@
     color: #7A2020;
     font-size: 14px;
   }
+
+* { box-sizing: border-box; }
+a { overflow-wrap: anywhere; text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid #ba7517; outline-offset: 4px; }
+footer { border-top: 1px solid #e0e0ea; margin-top: 36px; padding-top: 20px; display: flex; flex-wrap: wrap; gap: 12px 18px; font-size: 14px; }
+.updated { color: #666; font-size: 14px; }
+@media (max-width: 440px) { body { padding: 28px 18px 48px; } }
 </style>
 </head>
 <body>
-
+<main>
 <h1>Delete Your Mad Monk Account</h1>
-
-<p>If you'd like to permanently delete your Mad Monk account and all associated data, follow the steps below.</p>
-
-<h2>How to request deletion</h2>
-<p>Send an email to <a href="mailto:support@madmonk.site?subject=Account%20Deletion%20Request">support@madmonk.site</a> from the email address associated with your Mad Monk account, with the subject line "Account Deletion Request."</p>
-
-<p>Please include:</p>
-<ul>
-  <li>The email address you used to sign in to Mad Monk (via Google)</li>
-  <li>A short confirmation that you want your account permanently deleted</li>
-</ul>
-
-<h2>What gets deleted</h2>
-<ul>
-  <li>Your account and sign-in information</li>
-  <li>Your profile photo, if you uploaded one</li>
-  <li>Your cloud-backed-up focus session history (Premium users)</li>
-  <li>Your subscription will also be cancelled if active — you may also cancel it directly anytime via Google Play's subscription settings</li>
-</ul>
-
+<p class="updated">Last updated: <time datetime="2026-10-24">24 October 2026</time></p>
+<p>Mad Monk is provided by <strong>Md Ahad Hosain</strong>, an individual developer publishing on Google Play as <strong>Bengal Tiger Studio</strong>. You can delete your account in the app or request deletion by email without reinstalling it.</p>
+<h2>Option 1: Delete inside the app</h2>
+<ol><li>Sign in to the Mad Monk account you want to delete.</li><li>Open <strong>Profile → Delete account</strong>, below Log Out.</li><li>Read the account, purchase, and deletion details and confirm the acknowledgement.</li><li>Confirm deletion. For a verified renewing plan, the action also asks to cancel renewal. Wait for the app to confirm completion.</li></ol>
+<p>If the app reports a failure, deletion has not been confirmed. Follow its retry/support instructions and check your Google Play subscription status.</p>
+<h2>Option 2: Request deletion by email</h2>
+<p>Email <a href="mailto:support@madmonk.site?subject=Account%20Deletion%20Request">support@madmonk.site</a> with the subject <strong>Account Deletion Request</strong>, preferably from the Google email used for Mad Monk. Include:</p>
+<ul><li>The Google sign-in email associated with your Mad Monk account.</li><li>Confirmation that you want your account and associated app data permanently deleted.</li><li>Whether you have an active Mad Monk subscription and want renewal cancelled as part of the request.</li></ul>
+<p>We verify ownership and cancellation authorization before acting. Never send passwords, sign-in codes, or payment-card details.</p>
 <h2>Processing time</h2>
-<p>We will process your deletion request within 30 days and confirm by email once complete.</p>
-
-<div class="warn">
-  <strong>Note:</strong> Free-tier users' local data (focus history stored only on-device) is not covered by this process — that data can be removed at any time simply by uninstalling the app.
-</div>
-
-<div class="box">
-  <strong>Contact</strong>
-  <p style="margin-bottom: 0;">
-    <a href="mailto:support@madmonk.site">support@madmonk.site</a>
-  </p>
-</div>
-
+<p>We will process your email deletion request within 30 days and confirm by email once complete. If more information is needed to verify ownership, we will contact you. The in-app flow processes the request directly when its checks succeed.</p>
+<h2>What gets deleted</h2>
+<ul><li>Your Mad Monk authentication account and stored email.</li><li>Your profile and uploaded photo.</li><li>Your tasks, focus history, progress, and associated active cloud records.</li><li>For in-app deletion, the account's saved app data on the device completing the flow, including for free users.</li></ul>
+<p>Your Google/Gmail account and Google's purchase records are separate and are not deleted.</p>
+<h2>Subscriptions and refunds</h2>
+<div class="box"><p>The in-app flow asks permission to stop renewal of verified Mad Monk subscriptions associated with your account and checks cancellation before completing deletion. Monthly/yearly renewing plans can have future renewals stopped; lifetime purchases have no recurring renewal.</p><p>Sending an email, logging out, or uninstalling alone does not stop billing. Check or cancel renewal directly in <a href="https://play.google.com/store/account/subscriptions?package=com.madmonk.app">Google Play subscriptions</a> using the purchasing account. Tell support about purchases not shown in the deletion flow.</p></div>
+<p>Cancellation does not automatically refund a purchase. Refund eligibility follows Google Play's policies and applicable consumer rights.</p>
+<h2>If you return later</h2>
+<p>Sign in using the original Google identity and use the Google Play account that purchased Premium. <strong>Restore purchases</strong> can recover remaining paid subscription access or a valid lifetime purchase after verification. Expired, refunded, or revoked purchases do not grant access. Deleted tasks, history, photos, and progress cannot be recovered.</p>
+<h2>Limited records retained</h2>
+<p>For eligible restoration and fraud prevention, we retain coded purchase and Google identity/account fingerprints, product type, and paid expiry. These pseudonymous records do not contain your deleted email, name, photo, tasks, or history. Subscription recovery records are removed after expiry during daily cleanup. Lifetime recovery records remain for lifetime restoration.</p>
+<p>Contact support if you also want recovery records removed; this prevents automatic recovery through that mechanism. A temporary deletion-receipt fingerprint may remain for up to 24 hours plus the daily cleanup interval. Incomplete deletion jobs may keep an account reference until resolved.</p>
+<p>Support emails, provider logs, and technical backups have separate retention as explained in our <a href="/privacy.html">Privacy Policy</a>. Deleting active app records does not promise immediate removal from every log or backup. Completed deletion requests must be reapplied before a restored backup serves users.</p>
+<h2>Other devices and local copies</h2>
+<div class="warn">An email request cannot remotely erase offline data on your phone or other devices. Clear Mad Monk's app storage or uninstall it on those devices to remove local copies. Android/Google-managed device backups are separate; use your device or Google backup settings to manage them.</div>
+<div class="box"><strong>Need help?</strong><p><a href="mailto:support@madmonk.site">support@madmonk.site</a><br>Md Ahad Hosain · Bengal Tiger Studio</p></div>
+</main>
+<footer aria-label="Site navigation"><a href="/">Home</a> <a href="/privacy.html">Privacy Policy</a> <a href="/terms.html">Terms of Service</a> <a href="/delete-account.html">Delete Account</a> <a href="mailto:support@madmonk.site">Contact</a></footer>
 </body>
 </html>

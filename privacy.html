@@ -26,71 +26,68 @@
     padding: 20px;
     margin-top: 32px;
   }
+
+* { box-sizing: border-box; }
+a { overflow-wrap: anywhere; text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid #ba7517; outline-offset: 4px; }
+footer { border-top: 1px solid #e0e0ea; margin-top: 36px; padding-top: 20px; display: flex; flex-wrap: wrap; gap: 12px 18px; font-size: 14px; }
+.updated { color: #666; font-size: 14px; }
+@media (max-width: 440px) { body { padding: 28px 18px 48px; } }
 </style>
 </head>
 <body>
-
+<main>
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: September 2026</p>
-
-<p>Mad Monk ("we," "our," or "the app") is a focus and productivity app for Android. This Privacy Policy explains what information we collect, how we use it, and the choices you have.</p>
-
-<h2>1. Information We Collect</h2>
-
-<p><strong>Account information.</strong> When you sign in with Google, we receive your name, email address, and profile photo from your Google account, used solely to create and identify your Mad Monk account.</p>
-
-<p><strong>Focus session data.</strong> We record the focus sessions you complete — duration, mode selected, and completion time — to power your history, streaks, and level progression within the app.</p>
-
-<p><strong>Task data.</strong> Any to-do items you create are stored so you can view and manage them within the app.</p>
-
-<p><strong>Profile photo.</strong> If you choose to upload a custom profile photo, it is stored securely and used only to display your avatar within the app.</p>
-
-<p><strong>Purchase information.</strong> If you subscribe to Mad Monk Premium, purchase transactions are processed entirely by Google Play Billing. We do not receive or store your payment card details — only confirmation that a purchase was made, to unlock Premium features on your account.</p>
-
-<h2>2. How We Use Your Information</h2>
+<p class="updated">Last updated: <time datetime="2026-10-24">24 October 2026</time></p>
+<p>Mad Monk is provided by <strong>Md Ahad Hosain</strong>, an individual developer publishing on Google Play as <strong>Bengal Tiger Studio</strong>. This policy describes how the Mad Monk Android app handles information. Contact <a href="mailto:support@madmonk.site">support@madmonk.site</a> with questions or privacy requests.</p>
+<h2>1. Information we handle</h2>
+<p><strong>Account and profile.</strong> Google sign-in provides an account identifier and available profile information, such as your name, email address, and Google profile-photo URL. Supabase manages your Mad Monk authentication account. We also store profile details you choose, such as a display name or uploaded photo. This account/profile processing applies to both free and Premium accounts.</p>
+<p><strong>Focus sessions, tasks, and preferences.</strong> The app stores session duration, mode, dates, completion/progress information, tasks you enter and their details, and settings such as theme and sound choices. These support your timer, to-do list, history, streaks, and focus-time-based levels.</p>
+<p><strong>Purchases.</strong> Google Play processes payments. We process purchase tokens and identifiers, product/plan information, verification status and times, expiry, and account-binding information to verify Premium access, prevent unauthorized claims, manage cancellation, and restore valid purchases. We do not receive your payment-card details.</p>
+<p><strong>Support and technical records.</strong> If you email support, we receive your email address, message, and any information you choose to provide. Authentication, hosting, and email services may process technical records such as IP addresses, request times, and error/security events to operate and protect the service. Do not send passwords, sign-in codes, or payment-card details.</p>
+<h2>2. How we use information</h2>
+<ul><li>To sign you in and provide profiles, tasks, focus sessions, progress, and preferences.</li><li>To provide cloud features for eligible Premium accounts.</li><li>To verify purchases, restore eligible access, and process cancellation and account deletion.</li><li>To answer support requests, investigate failures, prevent misuse, and meet applicable legal obligations.</li></ul>
+<p>The current app does not integrate Google AdMob or a dedicated advertising/usage-analytics SDK. We do not sell personal data. If these practices change, we will update this policy and provide disclosures or obtain consent where required before introducing the new practices.</p>
+<h2>3. Local storage and cloud features</h2>
+<p><strong>Free accounts:</strong> focus history and tasks are stored locally by Mad Monk rather than synced through its Premium cloud feature. Account information, profile details, and any uploaded photo still use Supabase. Signing in does not by itself back up all app content.</p>
+<p><strong>Premium accounts:</strong> eligible task and focus-session data can also be sent to Supabase for cloud features. Sync requires connectivity and successful uploads. Unsynced changes and device-specific settings may not be recoverable after reinstalling.</p>
+<p>The current app does not automatically erase free users' data at the start of each month. Clearing app storage, uninstalling, losing a device, or deleting an account may remove local data.</p>
+<p><strong>Android backups:</strong> depending on your device and Google settings, Android's separate backup or device-transfer features may keep copies of app data. These are distinct from Mad Monk Premium cloud sync and are managed through device/Google backup settings. We cannot remotely erase copies on other devices or in backups controlled by you.</p>
+<p>Optional uploaded profile photos are stored in Supabase and displayed using a hosted image URL. Such a URL may be accessible to someone who obtains it; do not use a confidential document as your avatar.</p>
+<h2>4. Services and sharing</h2>
+<p>We use service providers for the functions below. Information is shared as necessary for these functions, not sold for advertising.</p>
 <ul>
-  <li>To provide and operate the core features of the app (focus sessions, tasks, history, levels)</li>
-  <li>To back up your data to the cloud if you are a Premium subscriber</li>
-  <li>To personalize your experience (level titles, unlocked characters, streaks)</li>
-  <li>To improve the app based on aggregate, non-identifying usage patterns</li>
+<li><strong>Google:</strong> sign-in, Google Play purchases and verification, and any Google-managed device backup you enable. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
+<li><strong>Supabase:</strong> authentication, database, storage, and server functions. See <a href="https://supabase.com/privacy">Supabase's Privacy Policy</a>.</li>
+<li><strong>Email services:</strong> support sent to support@madmonk.site is forwarded through ImprovMX to our Gmail inbox. Resend supports outgoing email. See the <a href="https://improvmx.com/transparency/privacy-policy/">ImprovMX</a> and <a href="https://resend.com/legal/privacy-policy">Resend</a> privacy policies.</li>
+<li><strong>GitHub Pages:</strong> hosts this website and may process visitors' technical connection information. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's Privacy Statement</a>.</li>
 </ul>
-
-<h2>3. Data Storage</h2>
-
-<p><strong>Free users:</strong> your focus session history and task data are stored locally on your device only. This data is automatically cleared at the start of each new month, and will be permanently lost if you uninstall the app.</p>
-
-<p><strong>Premium subscribers:</strong> your focus session history is additionally backed up securely to our cloud database (hosted by Supabase), so it survives app reinstalls and is available across devices signed into the same account.</p>
-
-<h2>4. Third-Party Services</h2>
-<p>Mad Monk uses the following third-party services, each with their own privacy practices:</p>
+<p>We may disclose information where required by law or necessary to investigate misuse and protect users' rights. Providers may process information outside your country, subject to their applicable safeguards and privacy terms.</p>
+<h2>5. Device access and controls</h2>
+<p>Internet access supports sign-in, purchase verification, cloud features, and hosted content. Optional Do Not Disturb access lets the app adjust interruption settings during focus sessions when you enable it; revoke this access in Android settings. If you choose a profile photo, the app uses the image you select. Sound, vibration, and notification behavior can be controlled through the app and available Android settings.</p>
+<h2>6. Account deletion</h2>
+<p>Use <strong>Profile → Delete account</strong>, or request deletion through our <a href="/delete-account.html">Delete Account page</a> or <a href="mailto:support@madmonk.site?subject=Account%20Deletion%20Request">support email</a>. We verify ownership before processing support requests.</p>
+<p>Successful deletion removes your Mad Monk authentication account and stored email, profile and uploaded photo, tasks, focus history, progress, and associated active cloud records. In-app deletion also clears that account's saved app data on the device completing the flow, including for free users. It does not delete your Google/Gmail account or Google's purchase records. A remote email request cannot erase offline copies from your devices.</p>
+<p>For verified renewing Mad Monk subscriptions, the in-app flow asks permission to cancel renewal and verifies cancellation before completing deletion. If a step fails, the app explains that completion could not be confirmed and provides retry or support options. Sending an email alone does not cancel billing. Check <a href="https://play.google.com/store/account/subscriptions?package=com.madmonk.app">Google Play subscriptions</a> to confirm renewal status.</p>
+<p>Returning with the original Google sign-in and purchasing Google Play account can restore unexpired subscription access or a valid lifetime purchase after verification. Deleted tasks, photos, history, and progress are not restored.</p>
+<h2>7. Retention and limited records after deletion</h2>
 <ul>
-  <li><strong>Google Sign-In</strong> — for account authentication</li>
-  <li><strong>Google Play Billing</strong> — for processing Premium subscription payments</li>
-  <li><strong>Supabase</strong> — for secure cloud database and file storage</li>
-  <li><strong>Google AdMob</strong> — free-tier users may see advertisements served by Google AdMob, which may collect device identifiers for ad personalization in accordance with Google's own privacy policy</li>
+<li><strong>Active accounts:</strong> account/profile and cloud data are kept to provide the service until you remove the data or account, subject to applicable legal obligations. Premium expiry alone is not an account-deletion request.</li>
+<li><strong>Purchase recovery:</strong> coded purchase and Google identity/account fingerprints, product type, and paid expiry are retained for eligible restoration and fraud prevention. These are pseudonymous, not anonymous. They do not include the deleted Gmail address, name, photo, tasks, or history. Subscription recovery records are removed after paid expiry during daily cleanup. Lifetime recovery records remain to support lifetime access. Contact support to request their removal too; this prevents automatic recovery through this mechanism.</li>
+<li><strong>Deletion receipts:</strong> a random receipt fingerprint may remain for up to 24 hours plus the daily cleanup interval to confirm interrupted requests. An incomplete deletion may retain the account reference until the issue is resolved.</li>
+<li><strong>Support records:</strong> correspondence is kept as needed to handle requests and follow-up, resolve disputes, and satisfy applicable obligations. Contact us to request removal of support correspondence; it is separate from app database records.</li>
+<li><strong>Provider logs and technical backups:</strong> these follow the relevant provider's retention and rotation settings and may persist after active records are deleted. Mad Monk currently uses Supabase Free; we do not promise immediate erasure from every infrastructure log or backup. Any separately retained export must be handled as part of a deletion request, and completed deletions must be reapplied before a restored backup serves users. Contact support for the applicable retention details.</li>
 </ul>
-
-<h2>5. Notifications and Permissions</h2>
-<p>Mad Monk may request the following device permissions, each used only for their stated purpose:</p>
-<ul>
-  <li><strong>Notification access</strong> — to send you focus reminders and session alerts</li>
-  <li><strong>Do Not Disturb access</strong> (optional, user-enabled) — to silence other notifications during your focus sessions, only if you turn this on in Settings</li>
-</ul>
-
-<h2>6. Data Deletion</h2>
-<p>You may delete your account and all associated data at any time by contacting us at the email below. Free-tier local data can also be cleared at any time by uninstalling the app.</p>
-
-<h2>7. Children's Privacy</h2>
-<p>Mad Monk is not directed at children under 13, and we do not knowingly collect personal information from children under 13.</p>
-
-<h2>8. Changes to This Policy</h2>
-<p>We may update this Privacy Policy from time to time. Continued use of the app after changes are posted constitutes acceptance of the updated policy.</p>
-
-<div class="contact-box">
-  <strong>Contact us</strong>
-  <p style="margin-bottom: 0;">If you have questions about this Privacy Policy or your data, contact us at:<br>
-  <a href="mailto:support@madmonk.site">support@madmonk.site</a></p>
-</div>
-
+<h2>8. Your choices and rights</h2>
+<p>You can edit available profile details, remove an uploaded photo, manage tasks, change permissions, and request account deletion. Depending on applicable law, you may have rights to access, correct, obtain a copy of, restrict, or object to processing of personal information, or complain to a data-protection authority. Contact <a href="mailto:support@madmonk.site">support@madmonk.site</a>; we may verify ownership before responding.</p>
+<h2>9. Security</h2>
+<p>We use measures including HTTPS, authenticated access, database access controls, and server-side purchase verification. No storage or transmission method is completely secure. Protect your Google account and devices and contact us if you suspect unauthorized access.</p>
+<h2>10. Children's privacy</h2>
+<p>Mad Monk is not directed at children under 13, and we do not knowingly collect their personal information. If you believe a child under 13 has provided information, contact us so we can investigate and take appropriate action.</p>
+<h2>11. Updates and contact</h2>
+<p>We will update the date on this page when this policy changes. For material changes, we will provide appropriate notice and obtain consent where required; continued use is not a substitute for consent when the law requires it.</p>
+<div class="contact-box"><strong>Contact</strong><p>Md Ahad Hosain · Bengal Tiger Studio<br><a href="mailto:support@madmonk.site">support@madmonk.site</a></p></div>
+</main>
+<footer aria-label="Site navigation"><a href="/">Home</a> <a href="/privacy.html">Privacy Policy</a> <a href="/terms.html">Terms of Service</a> <a href="/delete-account.html">Delete Account</a> <a href="mailto:support@madmonk.site">Contact</a></footer>
 </body>
 </html>
